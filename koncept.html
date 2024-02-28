@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <title>Nippon</title>
+</head>
+<body>
+    <!--menulinje-->   
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Måltidskasser</a>
+                    <ul class="submenu">
+                        <li><a href="maltidskasser.html">Den japanske</a></li>
+                        <li><a href="error.html">Den sunde</a></li>
+                        <li><a href="error.html">Den klassiske</a></li>
+                        <li><a href="error.html">Den personlige</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Vores koncept</a>
+                    <ul class="submenu">
+                        <li><a href="koncept.html">Sådan fungerer det</a></li>
+                        <li><a href="error.html">Økologi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Om os</a>
+                    <ul class="submenu">
+                        <li><a href="error.html">Levering</a></li>
+                        <li><a href="error.html">Leverandører</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kundeservice</a>
+                    <ul class="submenu">
+                        <li><a href="error.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#"><img src="img/profil.png" alt="Icon 1"></a>
+            <a href="#"><img id="ikon_kurv" src="img/kurv.png" alt="Icon 2"></a>
+        </div>
+    </header> 
+
+    <!--main content--> 
+    <main>
+        <br>
+        <h1 class="koncept_overskrift">SÅDAN FUNGERER VORES MÅLTIDSKASSER</h1>
+
+        <!-- motiongraphic video -->
+        <video class="motiongraphic" controls>
+            <source src="img/nippon_film.mp4" type="video/mp4">
+        </video>
+
+        <!-- overskrift til infographic -->
+        <p class="main_tekst">
+            Nippon tilbyder en enestående oplevelse med vores japansk inspirerede måltidskasser, 
+            <br>
+            der bringer aftensmaden direkte til din dør. 
+            <br><br>
+
+            Bestil vores måltidskasser og oplev fordelene ved at få leveret friske og økologiske råvarer, samt opskrifter, der gør 
+            din hverdag lettere, med nem og hurtig aftensmad. 
+            Forkæl dine smagsløg og spar tid på planlægning og indkøb, med vores enkle bestillingskoncept! 
+            <br><br>
+    
+            Nedenfor kan du se hvordan konceptet for vores måltidskasser fungerer:
+        </p>
+
+        <!-- infographic -->
+        <img class="infographic" src="img/infographic.jpg" alt="infographic">
+
+        <!-- afsluttende tekst -->
+        <h3 class="tekst_info">
+            Nu kender i til vores fede koncept, gå tilbage til vores forside 
+            eller udforsk vores måltidskasser herunder:
+        </h3>
+
+        <!-- knapper til at komme videre -->
+        <a class="knap_forside" href="index.html">Forside</a>
+        <a class="knap_maltidskasser" href="maltidskasser.html">Måltidskasser</a>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <section class="footer_container">
+            <!-- kontakt og adresse -->
+            <div class="kontakt">
+                <h4>Kontakt:</h4>
+                <p>
+                    <a href="mailto:nippon@gmail.com">nippon@gmail.com</a>
+                    <br>
+                    <a href="tel:+4526241394">+45 26241394</a>
+                </p>
+                <br>
+                <h4>Adresse:</h4>
+                <p>
+                Ringvej Syd 104 <br>
+                8260 Viby <br>
+                Danmark
+                </p>
+            </div>
+    
+            <!-- Nyhedsbrev -->
+            <section>
+                <form action="/action_page.php">
+                    <div class="container">
+                        <h4>Tilmeld nyhedsbrev:</h4>
+                    </div>
+                
+                    <div class="container">
+                        <input class="text_felt" type="text" placeholder="Navn" name="Navn" required>
+                        <input class="text_felt" type="text" placeholder="E-mail" name="mail" required>
+                    </div>
+                
+                    <div class="container">
+                        <input type="submit" value="Tilmeld her">
+                    </div>
+                </form>
+            </section>
+            
+            <!-- Sociale medier -->
+            <div class="sociale_medier">
+                <h4>Sociale medier:</h4>
+                    <div class="social_ikoner">
+                    <a href="https://www.facebook.com" target="_blank"><img src="img/fblogo.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img/iglogo.png" alt="instagram"></a>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+</body>
+</html> 

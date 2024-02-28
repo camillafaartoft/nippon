@@ -1,0 +1,765 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  background-image: url('../img/baggrund.jpg');
+  background-size: 100%;
+  background-position: center;
+}
+
+/* -- HEADER -- */
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 10px #7e6e6f;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-weight: 400;
+}
+.logo img {
+  max-height: 55px; 
+  margin-left: 40px;
+  padding-top: 5px;
+}
+.icons img {
+  max-height: 30px; 
+  margin-left: 10px;
+}
+#ikon_kurv {
+  margin-right: 40px;
+}
+nav ul {
+  display: flex;
+}
+nav {
+  margin-left: auto;
+}
+.menu li {
+  position: relative;
+}
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.submenu a {
+  float: none;
+  color: black;
+  padding: 12px 50px 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.submenu a:hover {
+  background-color: #ddd;
+}
+.submenu li {
+  padding: 1px;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+.menu > li:hover > a {
+  background-color: #c41300;
+  color: #fff;
+}
+
+
+/* -- MAIN CONTENT FORSIDEN -- */
+.forsidebillede {
+  width: 100%;
+  height: 100%;
+}
+.forside_overskrift {
+  text-align: center;
+}
+.forsidebillede_tekst {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-40%, -40%);
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+.forside_tekst {
+  text-align: center;
+  margin-top: 5px;
+  padding: 50px 30px 50px 30px;
+  font-size: 25px;
+}
+
+/* -- måltidskasser oversigt -- */
+.maltidskasser_overskrift {
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0 30px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-top: solid 3px #7e6e6f;
+  border-bottom: solid 3px #7e6e6f;
+}
+.maltidskasser_1 img, .maltidskasser_2 img {
+  width: 550px;
+  height: auto;
+  margin: 20px; 
+}
+.maltidskasse_billede{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.979);
+}
+.maltidskasser {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.maltidskasser_1, .maltidskasser_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ikon_kniv {
+  position: absolute;
+  top: 1012px;
+  left: 715px;
+  max-width: 120px;
+}
+.ikon_spisepinde {
+  position: absolute;
+  top: 1012px;
+  left: 120px;
+  max-width: 120px;
+}
+.ikon_brocoli {
+  position: absolute;
+  top: 1608px;
+  left: 120px;
+  max-width: 120px;
+}
+.ikon_mand {
+  position: absolute;
+  top: 1608px;
+  left: 715px;
+  max-width: 120px;
+}
+.knap_japansk {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 1290px;
+  left: 290px;
+  background-color: #c41300;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.knap_japansk:hover {
+  transform: scale(1.1);
+}
+.knap_klassisk {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 1290px;
+  left: 890px;
+  background-color: #c41300;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.knap_klassisk:hover {
+  transform: scale(1.1);
+}
+.knap_sund {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 1890px;
+  left: 290px;
+  background-color: #c41300;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.knap_sund:hover {
+  transform: scale(1.1);
+}
+.knap_personlig {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 1890px;
+  left: 890px;
+  background-color: #c41300;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.knap_personlig:hover {
+  transform: scale(1.1);
+}
+.fungerer_boks {
+  background-color: #ffffff;
+  padding: 30px 0 70px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-top: solid 3px #7e6e6f;
+  border-bottom: solid 3px #7e6e6f;
+}
+.fungerer_tekst {
+  text-align: center;
+  font-size: 25px;
+}
+.forside_button {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  left: 575px;
+  width: 350px;
+  height: auto;
+  padding: 12px 45px 12px 45px;
+  background-color: #c41300;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+.forsidebutton:hover {
+  transform: scale(1.1);
+}
+
+/* -- instagram post -- */
+.insta_tekst{
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+}
+.instapost img {
+  width: 350px;
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+.instapost {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+ 
+/* --- KONCEPT SIDE --- */
+.koncept_overskrift {
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: #7e6e6f 3px solid;
+  border-top:#7e6e6f 3px solid;
+  padding: 25px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+.motiongraphic {
+  max-width: 60%;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+.main_tekst {
+  text-align: center;
+  margin-top: 60px;
+  background-color: #ffffff;
+  padding: 65px 170px 65px 170px;
+  font-size: 20px;
+  border-bottom: #7e6e6f 3px solid;
+  border-top:#7e6e6f 3px solid;
+}
+.infographic {
+  margin-left: 320px;
+  z-index: 1;
+  margin-top: 80px;
+  border:#ffffff 5px;
+  box-shadow: 0 0 20px 20px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.tekst_info {
+  text-align: center;
+  font-size: 20px;
+  padding: 45px 170px 45px 170px;
+  background-color: #ffffff;
+  border-bottom: #7e6e6f 3px solid;
+  border-top:#7e6e6f 3px solid;
+  font-size: 20px;
+  margin-top: 75px;
+  margin-bottom: 180px;
+} 
+.knap_forside {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 2220px;
+  left: 355px;
+  background-color: #c41300;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  z-index: 1;
+}
+.knap_forside:hover{
+  transform: scale(1.1);
+}
+.knap_maltidskasser {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 2220px;
+  left: 825px;
+  background-color: #c41300;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+} 
+.knap_maltidskasser:hover{
+  transform: scale(1.1);
+}
+
+/* -- FEJL 404 SIDE -- */
+.fejl_overskrift{
+  font-size: 80px;
+  color: #c41300;
+  font-weight: bold;
+  margin-left: 15%;
+  padding-top: 10px;
+}
+.tekst_fejl{
+  font-size: 25px;
+  color: #000000;
+  line-height: 2;
+  margin-left: 15%;
+  padding-right: 10%;
+}
+.container_fejl {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr; 
+  gap: 20px;
+  padding-top: 80px;
+}
+.karakter {
+  grid-row: 1 / span 2; 
+  width: 55%;
+  justify-self: flex-end;
+  padding-right: 6%;
+}
+.fejl_button {
+  font-family: "Montserrat", sans-serif;
+  background-color: #c41300;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  font-size: large;
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  margin-top: 30px;  
+  text-decoration: none;
+  border: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 15%;
+  transition: transform 0.3s ease;
+  margin-bottom: 12%;
+}
+.fejl_button:hover{
+  transform: scale(1.1);
+} 
+
+/* ------ JAPANSK MÅLTIDSKASSE UNDERSIDE -----*/
+
+/* Styling af overskrift*/
+.underside-maaltidskasser {
+  background-color: #fff;
+  text-align: center;
+  margin: 50px 0 50px 0;
+  padding: 30px;
+  border-top: solid 5px #7e6e6f;
+  border-bottom: solid 5px #7e6e6f;
+  font-size: 30px;
+}
+
+/* -- Styling af knapper ved valgt af type måltidskasse -- */
+.kasse-type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.kasse-type button {
+  font-family: "Montserrat", sans-serif;
+  margin: 30px;
+  background-color: #c41300;
+  color: #fff;
+  padding: 10px 40px 10px 40px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: solid 2px #c41300;
+}
+.kasse-type a {
+  text-decoration: none;
+}
+.kasse-type button:hover {
+  background-color: #fff;
+  color: #000000;
+  border: solid 2px #c41300;
+}
+#japanKnap {
+  background-color: #fff;
+  color: #000000;
+  border: solid 2px #c41300;
+}
+#japanKnap:hover {
+  background-color: #fff;
+  color: #000000;
+  border: solid 2px #c41300;
+}
+.markeret {
+  background-color: #fff;
+  color: #000000;
+  border: solid 2px #c41300;
+}
+
+/* Styling af knapper ved valgt af antal personer i hustand og antal dage kassen modtages*/
+.vaelg-antal {
+  display: flex;
+  background-color: #fff;
+  border-top: solid 5px #7e6e6f;
+  border-bottom: solid 5px #7e6e6f;
+  padding: 35px;
+  justify-content: space-around;
+}
+
+.antal p{
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.antal a {
+  background-color: #c41300;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: solid 2px #c41300;
+  margin: 5px;
+}
+
+
+.vaelg-antal .antal a:hover {
+  background-color: #fff; 
+  color: #000; 
+  border: solid 2px #c41300; 
+}
+
+
+/* Styling af 3 bud på en måltiskasse*/
+.budpaa {
+  text-align: center;
+  margin: 50px 0 10px 0;
+  padding: 30px;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.bud-kasse {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.vaelg-kasse {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: solid 2px #c41300;
+  padding: 30px 30px 40px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  width: 320px;
+}
+.vaelg-kasse h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.vaelg-kasse p {
+  text-align: start;
+  padding: 15px 40px 10px 40px;
+}
+.vaelg-kasse button {
+  background-color: #c41300;
+  border: solid 2px #c41300;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  margin: 10% 10% 0 18%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.vaelg-kasse button:hover {
+  background-color: #ffffff;
+  border: solid 2px #56641c;
+  color: #000;
+}
+
+/* Styling af oversigten over de 9 måltider*/
+
+.raekke {
+  display: flex;
+  justify-content: center;
+}
+
+.kasse {
+  background-color: #ffffff;
+  border: solid 3px #ffffff;
+  margin: 30px;
+  padding: 1%;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.kasse img {
+  max-width: 300px;
+}
+
+.kasse h5 {
+  font-size: large;
+  padding-top: 10px;
+}
+
+.vaelg {
+  color: #ffffff;
+  background-color: #c41300;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.vaelg:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.vaelg-ikoner {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.vaelg-ikoner img {
+  max-width: 40px;
+  padding: 0 10px 0 10px;
+}
+
+.vaelg-ikoner p {
+  margin-top: 10px
+}
+
+/* --- Personlig kasse i bunden af undersiden --- */
+
+/* Styling af kasse*/
+.personlig-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; 
+  margin-bottom: 100px;
+}
+
+.box {
+  width: 700px;
+  padding: 50px;
+  border: solid 2px #56641c;
+  background-color: #fff;
+  text-align: left;
+}
+
+/* Styling af oversigt over valgte retter*/
+.valgte-heading {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.valgte-retter {
+  border: 2px solid #c41300; 
+  padding: 10px;
+  margin: 10px 30px 10px 30px;
+}
+
+.valgte {
+  display: flex;
+  margin-left: 20px;
+}
+.valgte p {
+  padding: 10px 50px 15px 10px;
+}
+
+.valgte a {
+  background-color: #c41300;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: solid 2px #c41300;
+  margin-left: 10px;
+}
+
+.valgte-dage {
+  margin-left: 80px;
+}
+
+/* Styling af Knapper i bunden af boxen*/
+.slut-knapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slut-knap {
+  margin: 15px 55px 5px 55px;
+  padding: 10px 30px 10px 30px;
+  background-color: #c41300; 
+  border: solid 2px #c41300;
+  color: #ffffff; 
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+ 
+.slut-knap:hover {
+  background-color: #ffffff;
+  border: solid 2px #56641c;
+  color: #000;
+}
+
+
+/* -- FOOTER -- */
+footer {
+  background-color: #7e6e6f; 
+  color: #E3E6E4;
+  padding: 35px 0 35px 0;
+  font-size: 18px;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.kontakt a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+footer h4 {
+  font-weight: bold;
+  padding: 0;
+  font-size: 17px;
+}
+
+/* -- nyhedsbrev -- */
+.form {
+  color: black;
+  background-color: #E3E6E4;
+}
+.container {
+  padding: 0 50px 10px 20px;
+}
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: black;
+  background-color: #ffffff;
+}
+input[type=submit] {
+  width: 60%;
+  background-color: #f9c4b5;
+  border: solid 1px #000000;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* -- sociale medier --*/
+.social_ikoner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.social_ikoner a {
+  margin: 6px;
+  text-decoration: none;
+}
+/* -- ikonbilleder -- */
+.social_ikoner img {
+  width: 45px; 
+  height: auto;
+}
+
+
+
+
+
